@@ -48,11 +48,8 @@ module.exports = function (app) {
             name: req.body.name,
             BurgerId: req.body.BurgerId
         }).then(function (result) {
-            // We have access to the new todo as an argument inside of the callback function
             res.json(result);
         }).catch(function (err) {
-            // Whenever a validation or flag fails, an error is thrown
-            // We can "catch" the error to prevent it from being "thrown", which could crash our node app
             res.json(err);
         });
     });
@@ -70,8 +67,6 @@ module.exports = function (app) {
                 res.json(result);
             })
             .catch(function (err) {
-                // Whenever a validation or flag fails, an error is thrown
-                // We can "catch" the error to prevent it from being "thrown", which could crash our node app
                 res.json(err);
             });
     });
