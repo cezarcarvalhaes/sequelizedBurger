@@ -1,0 +1,120 @@
+body {
+    background-color: gold;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: orangered;
+}
+
+div {
+    margin: 1em;
+}
+
+header {
+    text-align: center;
+}
+#feature {
+    text-align: center;
+}
+
+#main {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#burger-create{
+    text-align: center;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+li {
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    background-color: #ddd;
+    padding: 1em;
+}
+
+h1, h2 {
+    font-family: 'Modak', cursive;
+    font-weight: lighter;
+    color: orangered;
+    -webkit-text-stroke: 0.5px lightblue;
+}
+
+h1 {
+    font-size: 72px;
+    -webkit-text-stroke: 1.5px lightblue;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+button {
+    padding: 0.75em;
+    border-radius: 10px;
+    color: ghostwhite;
+    background-color: deepskyblue;
+    margin: 0 0;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 12px;
+}
+
+#add-burger {
+    margin: 2em;
+}
+
+#new-burger {
+    width: 33%;
+    height: 2em;
+}
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    max-width: 100%;
+    height: auto;
+    background-color: cyan;
+}
+
+#devoured li {
+    padding: 1.5em;
+}
+
+@media (max-width: 760px) {
+    #main {
+        width: 100%;
+        display: block;
+        justify-content: center;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    #burgers {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #devoured {
+        width: 100%;
+        margin-top: 3em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #new-burger {
+        width: 90%;
+        height: 2em;
+    }
+}

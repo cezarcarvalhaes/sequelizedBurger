@@ -1,0 +1,46 @@
+<header>
+    <h1>EAT DA BURGER!</h1>
+</header>
+<div id="feature">
+    <img class="foo" alt="burger-lady" src="/assets/img/foo-fighters.GIF" />
+    <h2>mmmmm...burgers!</h2>
+</div>
+<div id = "main">
+    <div id="burgers">
+        <h2>Burgers yet to be eaten...</h2>
+        <ul>
+            {{#each burgers}}
+                {{#unless devoured}}
+            <li>{{burger_name}}
+                <input class ="cust-input{{id}}" type = "text" placeholder= "Customer" ></input>
+                <button class="devour-btn" data-id="{{id}}" data-devoured="{{devoured}}">Devour it!</button>
+            </li>
+                {{/unless}}
+            {{/each}}
+        </ul>
+    </div>
+    <div id="devoured">
+        <h2>Devoured Burgers!</h2>
+        <ul>
+            {{#each burgers}}
+                {{#if devoured}}
+            <li>{{burger_name}} eaten by: {{Customer.name}}</li>
+                {{/if}}
+            {{/each}}
+        </ul>
+    </div>
+</div>
+
+<div id = "burger-create">
+    <h2>Create a burger!</h2>
+    <form class="create-form">
+
+        <div class="form-group">
+            <label for="new-burger"></label>
+            <input type="text" id="new-burger">
+        </div>
+
+
+        <button type="submit" id="add-burger">Add burger!</button>
+    </form>
+</div>
